@@ -5,15 +5,13 @@
         <title>Marion Huebner</title>
 
         <!-- Fonts -->
-        <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Hind:700|Lato:300" rel="stylesheet">
 
         <!-- Stylesheet -->
         <link rel="stylesheet" href="./stylesheets/main.css" media="screen" charset="utf-8">
 
-        <!-- Libraries -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
         <!-- Viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,32 +23,40 @@
         <meta name="author" content="Marion Huebner">
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
+        <header class="nav-header">
+            <nav class="nav">
+                <ul class="nav-list">
                     <li>
-                        <a href="#intro">intro</a>
+                        <a href="#intro"
+                           class="nav-list-item">intro</a>
                     </li>
                     <li>
-                        <a href="#about">about</a>
+                        <a href="#about"
+                           class="nav-list-item">about</a>
                     </li>
                     <li>
-                        <a href="#tech">tech</a>
+                        <a href="#tech"
+                           class="nav-list-item">tech</a>
                     </li>
                     <!-- <li>
-                        <a href="#portfolio">portfolio</a>
+                        <a href="#portfolio"
+                           class="nav-list-item">portfolio</a>
                     </li> -->
                     <li>
-                        <a href="#work">work</a>
+                        <a href="#work"
+                           class="nav-list-item">work</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#certs"
+                           class="nav-list-item">certs</a>
+                    </li> -->
+                    <li>
+                        <a href="#education"
+                           class="nav-list-item">education</a>
                     </li>
                     <li>
-                        <a href="#certs">certs</a>
-                    </li>
-                    <li>
-                        <a href="#education">education</a>
-                    </li>
-                    <li>
-                        <a href="#kind-words">kind words</a>
+                        <a href="#kind-words"
+                           class="nav-list-item">kind words</a>
                     </li>
                 </ul>
             </nav>
@@ -62,31 +68,59 @@
                 </header>
                 <p>full stack developer &amp; kinesthetic learner</p>
                 <p>
-                    <a href="mailto:say-hi@marionhuebner.com">EMAIL</a>&nbsp;|&nbsp;
-                    <a href="https://github.com/rionner" target="_blank">GITHUB</a>&nbsp;|&nbsp;
-                    <a href="https://www.linkedin.com/in/marionhuebner" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+                    <a href="mailto:say-hi@marionhuebner.com">email</a>&nbsp;|&nbsp;
+                    <a href="https://github.com/rionner" target="_blank">github</a>&nbsp;|&nbsp;
+                    <a href="https://www.linkedin.com/in/marionhuebner" target="_blank" rel="noopener noreferrer">linkedin</a>
                 </p>
             </article>
             <article id="about">
                 <header>
                     <h2>about</h2>
                 </header>
-                <p>I value
-                    <ul>
-                        <li>function over form</li>
-                        <li>quality over quantity</li>
-                        <li>intelligent work over the mindless grind</li>
-                        <li>research, reasoning, and outcome of design over aesthetics</li>
-                    </ul>
-                </p>
-                <p>I work to
-                    <ul>
-                        <li>build quality products</li>
-                        <li>challenge myself</li>
-                        <li>learn from experience</li>
-                        <li>enjoy this journey as much as possible</li>
-                    </ul>
-                </p>
+                <div class="block-container">
+                    <div class="block-3">
+                        <h3>I value</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-angle-right fa-sm"></i>
+                                function over form
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right fa-sm"></i>
+                                quality over quantity
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right fa-sm"></i>
+                                intelligent work over the mindless grind
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right fa-sm"></i>
+                                research, reasoning, and outcome of design over aesthetics
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="block-3">
+                        <h3>I endeavor</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-angle-right fa-sm"></i>
+                                to build quality products
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right fa-sm"></i>
+                                to challenge myself
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right fa-sm"></i>
+                                to learn from experience
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right fa-sm"></i>
+                                to enjoy this journey as much as possible
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </article>
         </section>
         <section>
@@ -94,117 +128,194 @@
                 <header>
                     <h2>tech</h2>
                 </header>
-                <h3>javascript</h3>
-                <ul>
-                    <li>
-                        ember <span class="advanced"></span>
-                    </li>
-                    <li>
-                        angular <span class="intermediate"></span>
-                    </li>
-                    <li>
-                        react <span class="novice"></span>
-                    </li>
-                    <li>
-                        node <span class="intermediate"></span>
-                    </li>
-                    <li>
-                        express <span class="intermediate"></span>
-                    </li>
-                </ul>
-                <h3>templates &amp; styles</h3>
-                <ul>
-                    <li>
-                        html 5 <span class="advanced"></span>
-                    </li>
-                    <li>
-                        css 3 | scss | sass | less <span></span>
-                    </li>
-                </ul>
-                <h3>python</h3>
-                <ul>
-                    <li>
-                        django <span class="novice"></span>
-                    </li>
-                    <li>
-                        flask <span class="novice"></span>
-                    </li>
-                </ul>
-                <h3>php</h3>
-                <ul>
-                    <li>
-                        laravel <span class="novice"></span>
-                    </li>
-                    <li>
-                        lumen <span class="novice">novice</span>
-                    </li>
-                </ul>
-                <h3>ruby</h3>
-                <ul>
-                    <li>
-                        rails <span class="intermediate"></span>
-                    </li>
-                    <li>
-                        sinatra <span class="intermediate"></span>
-                    </li>
-                </ul>
-                <h3>database</h3>
-                <ul>
-                    <li>
-                        mysql <span class="intermediate"></span>
-                    </li>
-                    <li>
-                        postgresql <span class="novice"></span>
-                    </li>
-                    <li>
-                        mongodb <span class="novice"></span>
-                    </li>
-                </ul>
-                <h3>devops</h3>
-                <ul>
-                    <li></li>
-                </ul>
-                <h3>design</h3>
-                <ul>
-                    <li>
-                        adobe creative suite/cloud <span class="intermediate"></span>
-                    </li>
-                    <li>
-                        sketch <span class="intermediate"></span>
-                    </li>
-                    <li>
-                        autocad <span class="advanced"></span>
-                    </li>
-                </ul>
+                <div class="block-container">
+                    <div class="block-3">
+                        <h3>javascript</h3>
+                        <ul>
+                            <li>
+                                <span class="advanced">
+                                    <i class="fas fa-check-circle fa-sm"></i>
+                                </span>
+                                &nbsp;ember
+                            </li>
+                            <li>
+                                <span class="intermediate">
+                                    <i class="fas fa-check-circle fa-sm"></i>
+                                </span>
+                                &nbsp;angular
+                            </li>
+                            <li>
+                                <span class="novice">
+                                    <i class="fas fa-check-circle fa-sm"></i>
+                                </span>
+                                &nbsp;react
+                            </li>
+                            <li> 
+                                <span class="intermediate">
+                                    <i class="fas fa-check-circle fa-sm"></i>
+                                </span>
+                                &nbsp;node
+                            </li>
+                            <li>
+                                <span class="intermediate">
+                                    <i class="fas fa-check-circle fa-sm"></i>
+                                </span>
+                                &nbsp;express
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="block-3">
+                        <h3>templates &amp; styles</h3>
+                        <ul>
+                            <li>
+                                <span class="advanced">
+                                    <i class="fas fa-check-circle fa-sm"></i>
+                                </span>
+                                &nbsp;html 5
+                            </li>
+                            <li>
+                                <span class="advanced">
+                                    <i class="fas fa-check-circle fa-sm"></i>
+                                </span>
+                                &nbsp;css 3 | scss | sass | less
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="block-3">
+                        <h3>python</h3>
+                        <ul>
+                            <li>
+                                <span class="novice">
+                                    <i class="fas fa-check-circle fa-sm"></i>
+                                </span>
+                                &nbsp;django
+                            </li>
+                            <li>
+                                <span class="novice">
+                                    <i class="fas fa-check-circle fa-sm"></i>
+                                </span>
+                                &nbsp;flask
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="block-3">
+                        <h3>php</h3>
+                        <ul>
+                            <li>
+                                <span class="novice">
+                                    <i class="fas fa-check-circle fa-sm"></i>
+                                </span>
+                                &nbsp;lumen
+                            </li>
+                        </ul>
+                    </div>
+                    <div class ="block-3">
+                        <h3>ruby</h3>
+                        <ul>
+                            <li>
+                                <span class="intermediate">
+                                    <i class="fas fa-check-circle fa-sm"></i>
+                                </span>
+                                &nbsp;rails
+                            </li>
+                            <li>
+                                <span class="intermediate">
+                                    <i class="fas fa-check-circle fa-sm"></i>
+                                </span>
+                                &nbsp;sinatra
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="block-3">
+                        <h3>database</h3>
+                        <ul>
+                            <li>
+                                <span class="intermediate">
+                                    <i class="fas fa-check-circle fa-sm"></i>
+                                </span>
+                                &nbsp;mysql
+                            </li>
+                            <li>
+                                <span class="novice">
+                                    <i class="fas fa-check-circle fa-sm"></i>
+                                </span>
+                                &nbsp;postgresql
+                            </li>
+                            <li>
+                                <span class="novice">
+                                    <i class="fas fa-check-circle fa-sm"></i>
+                                </span>
+                                &nbsp;mongodb
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="block-3">
+                        <h3>devops</h3>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div> -->
+                    <div class="block-3">
+                        <h3>design</h3>
+                        <ul>
+                            <li>
+                                <span class="intermediate">
+                                    <i class="fas fa-check-circle fa-sm"></i>
+                                </span>
+                                &nbsp;adobe creative suite/cloud
+                            </li>
+                            <li>
+                                <span class="intermediate">
+                                    <i class="fas fa-check-circle fa-sm"></i>
+                                </span>
+                                &nbsp;sketch
+                            </li>
+                            <li>
+                                <span class="advanced">
+                                    <i class="fas fa-check-circle fa-sm"></i>
+                                </span>
+                                &nbsp;autocad
+                            </li>
+                        </ul>    
+                    </div>
+                </div>
             </article>
             <!-- <article id="portfolio">
                 <header>
                     <h2>portfolio</h2>
                 </header>
-                <a href="">
-                    <h4>style guide</h4>
-                    <p>Style components as building blocks.</p>
-                </a>
-                <a href="">
-                    <h4>aplo</h4>
-                    <p>Application Development for a new CRM for insurance agents.</p>
-                </a>
-                <a href="">
-                    <h4>original six</h4>
-                    <p>d3 renderings of data for the original six NHL teams.</p>
-                </a>
-                <a href="">
-                    <h4>marvel tap-it</h4>
-                    <p>An interactive, two player melee inspired by the Marvel API and character library.</p>
-                </a>
-                <a href="">
-                    <h4>murray inspo</h4>
-                    <p>“Nothing prepared me for being this awesome. It's kind of a shock. It's kind of a shock to wake up every morning and be bathed in this purple light.”</p>
-                </a>
-                <a href="">
-                    <h4>shake-it-speare</h4>
-                    <p>Consuming the shake-it-speare API which uses a Markov Model of Shakespeare's entire body of work.</p>
-                </a>
+                    <div class="block-container">
+                    <a href=""
+                       class="block-3">
+                        <h4>style guide</h4>
+                        <p>Style components as building blocks.</p>
+                    </a>
+                    <a href=""
+                       class="block-3">
+                        <h4>aplo</h4>
+                        <p>Application Development for a new CRM for insurance agents.</p>
+                    </a>
+                    <a href=""
+                       class="block-3">
+                        <h4>original six</h4>
+                        <p>d3 renderings of data for the original six NHL teams.</p>
+                    </a>
+                    <a href=""
+                       class="block-3">
+                        <h4>marvel tap-it</h4>
+                        <p>An interactive, two player melee inspired by the Marvel API and character library.</p>
+                    </a>
+                    <a href=""
+                       class="block-3">
+                        <h4>murray inspo</h4>
+                        <p>“Nothing prepared me for being this awesome. It's kind of a shock. It's kind of a shock to wake up every morning and be bathed in this purple light.”</p>
+                    </a>
+                    <a href=""
+                       class="block-3">
+                        <h4>shake-it-speare</h4>
+                        <p>Consuming the shake-it-speare API which uses a Markov Model of Shakespeare's entire body of work.</p>
+                    </a>
+                </div>
             </article> -->
         </section>
         <section>
@@ -212,112 +323,128 @@
                 <header>
                     <h2>work</h2>
                 </header>
-                <h3>full stack engineer | activecampaign</h3>
-                <h4>sep 2017 - Present</h4>
-                <p>
-                    full stack developer with an emphasis on the front end
-                </p>
-                <ul>
-                    <li>refactoring legacy front end application code to support framwork upgrades, intelligent data loading, and testability</li>
-                    <li>advocate for front end application development best practices and test coverage</li>
-                    <li>application accessibility improvements, guided by wcag 2.0 level aa standards</li>
-                    <li>implementation of a new design system</li>
-                    <li>full stack development of new features for the crm vertical</li>
-                </ul>
-                <h3>front end engineer | packback</h3>
-                <h4>jan 2016 - aug 2017</h4>
-                <p>
-                    front end accessibility developer
-                </p>
-                <ul>
-                    <li>remediated wcag 2.0 level aa violations</li>
-                    <li>built and maintained brand living style guide</li>
-                    <li>ensured responsive and consistent style across browsers, devices, and products</li>
-                    <li>established quality assurance and cross-browser compatibility testing processes</li>
-                </ul>
-                <h3>application developer | aplo</h3>
-                <h4>jul 2015 - oct 2015</h4>
-                <p>
-                    full stack javascript developer
-                </p>
-                <ul>
-                    <li>created ui elements and express routes to handle csv file imports for user data</li>
-                    <li>normalized imported data for storage and search-ability</li>
-                    <li>established ui elements and express routes to relate agency owners, agencies, and agency members to one another</li>
-                </ul>
-                <h3>developer in residence | general assembly</h3>
-                <h4>jun 2015 - sep 2015</h4>
-                <p>
-                    instructor assistant for the web development immersive course
-                </p>
-                <ul>
-                    <li>curriculum included ruby on rails, the mean stack, javascript, html, css, and git</li>
-                    <li>debugged student development errors</li>
-                    <li>discussed and maintained scope of student projects</li>
-                    <li>provided moral support as needed</li>
-                </ul>
-                <h3>product representative | code rebel</h3>
-                <h4>nov 2013 - apr 2015</h4>
-                <p>
-                    product liaison for customers, resellers, &amp; cto
-                </p>
-                <ul>
-                    <li>client relations: sales and support correspondence</li>
-                    <li>supported software installation and licensing</li>
-                    <li>communicated available features and development timelines to prospective, new, and existing clients</li>
-                    <li>managed website redesign and development</li>
-                </ul>
-                <h3>project manager | bump networks &amp; code rebel</h3>
-                <h4>sep 2013 - jan 2015</h4>
-                <p>
-                    managed client projects with remote development teams with hybrid waterfall &amp; agile processes
-                </p>
-                <ul>
-                    <li>wrote feature specifications</li>
-                    <li>built and annotated wireframes</li>
-                    <li>milestone and pre-release qa tests</li>
-                    <li>ensured completion of contracted client deliverables</li>
-                    <li>maintained promised project timelines and client expectations</li>
-                </ul>
+                <div class="block-container">
+                    <div class="block-3">
+                        <h3>full stack engineer | activecampaign</h3>
+                        <h4>sep 2017 - Present</h4>
+                        <p>
+                            full stack developer with an emphasis on the front end
+                        </p>
+                        <ul>
+                            <li>refactoring legacy front end application code to support framwork upgrades, intelligent data loading, and testability</li>
+                            <li>advocate for front end application development best practices and test coverage</li>
+                            <li>application accessibility improvements, guided by wcag 2.0 level aa standards</li>
+                            <li>implementation of a new design system</li>
+                            <li>full stack development of new features for the crm vertical</li>
+                        </ul>
+                    </div>
+                    <div class="block-3">
+                        <h3>front end engineer | packback</h3>
+                        <h4>jan 2016 - aug 2017</h4>
+                        <p>
+                            front end accessibility developer
+                        </p>
+                        <ul>
+                            <li>remediated wcag 2.0 level aa violations</li>
+                            <li>built and maintained brand living style guide</li>
+                            <li>ensured responsive and consistent style across browsers, devices, and products</li>
+                            <li>established quality assurance and cross-browser compatibility testing processes</li>
+                        </ul>
+                    </div>
+                    <div class="block-3">
+                        <h3>application developer | aplo</h3>
+                        <h4>jul 2015 - oct 2015</h4>
+                        <p>
+                            full stack javascript developer
+                        </p>
+                        <ul>
+                            <li>created ui elements and express routes to handle csv file imports for user data</li>
+                            <li>normalized imported data for storage and search-ability</li>
+                            <li>established ui elements and express routes to relate agency owners, agencies, and agency members to one another</li>
+                        </ul>
+                    </div>
+                    <div class="block-3">
+                        <h3>developer in residence | general assembly</h3>
+                        <h4>jun 2015 - sep 2015</h4>
+                        <p>
+                            instructor assistant for the web development immersive course
+                        </p>
+                        <ul>
+                            <li>curriculum included ruby on rails, the mean stack, javascript, html, css, and git</li>
+                            <li>debugged student development errors</li>
+                            <li>discussed and maintained scope of student projects</li>
+                            <li>provided moral support as needed</li>
+                        </ul>
+                    </div>
+                    <div class="block-3">
+                        <h3>product representative | code rebel</h3>
+                        <h4>nov 2013 - apr 2015</h4>
+                        <p>
+                            product liaison for customers, resellers, &amp; cto
+                        </p>
+                        <ul>
+                            <li>client relations: sales and support correspondence</li>
+                            <li>supported software installation and licensing</li>
+                            <li>communicated available features and development timelines to prospective, new, and existing clients</li>
+                            <li>managed website redesign and development</li>
+                        </ul>
+                    </div>
+                    <div class="block-3">
+                        <h3>project manager | bump networks &amp; code rebel</h3>
+                        <h4>sep 2013 - jan 2015</h4>
+                        <p>
+                            managed client projects with remote development teams with hybrid waterfall &amp; agile processes
+                        </p>
+                        <ul>
+                            <li>wrote feature specifications</li>
+                            <li>built and annotated wireframes</li>
+                            <li>milestone and pre-release qa tests</li>
+                            <li>ensured completion of contracted client deliverables</li>
+                            <li>maintained promised project timelines and client expectations</li>
+                        </ul>
+                    </div>
+                </div>
             </article>
-            <article id="certs">
+            <!-- <article id="certs">
                 <header>
                     <h2>certs</h2>
                 </header>
                 <p>
                     in progress
                 </p>
-            </article>
+            </article> -->
             <article id="education">
                 <header>
                     <h2>education</h2>
                 </header>
-                <h3>web development immersive @ general assembly</h3>
-                <h4>mar 2015 - jun 2015</h4>
-                <p>
-                    html, css, javascript, ruby, and sql
-                </p>
-                <h3>bachelor of science in architecture @ university of cincinnati</h3>
-                <h4>sep 2007 - jun 2011</h4>
-                <p>
-                    design theory, construction, structures, sustainability, and history in the field of architecture.
-                </p>
-                <h3>art production internship @ tom sewell archive</h3>
-                <h4>sep 2010 - dec 2010</h4>
-                <p>
-                    publish, document, and archive 40 years of photography.
-                </p>
-                <h3>international studies @ danish institute for study abroad</h3>
-                <h4>jun 2010 - sep 2010</h4>
-                <p>
-                    scandinavian design theory, history, and typology.
-                </p>
-                <h3>architectural internship @ court atkins architects</h3>
-                <h4>sep 2008 - dec 2008</h4>
-                <h4>mar 2009 - jun 2009</h4>
-                <p>
-                    construction documents, client submittals, architectural review board renderings, and marketing materials.
-                </p>
+                <!-- <div class="block-container"> -->
+                    <h3>web development immersive @ general assembly</h3>
+                    <h4>mar 2015 - jun 2015</h4>
+                    <p>
+                        html, css, javascript, ruby, and sql
+                    </p>
+                    <h3>bachelor of science in architecture @ university of cincinnati</h3>
+                    <h4>sep 2007 - jun 2011</h4>
+                    <p>
+                        design theory, construction, structures, sustainability, and history in the field of architecture.
+                    </p>
+                    <h3>art production internship @ tom sewell archive</h3>
+                    <h4>sep 2010 - dec 2010</h4>
+                    <p>
+                        publish, document, and archive 40 years of photography.
+                    </p>
+                    <h3>international studies @ danish institute for study abroad</h3>
+                    <h4>jun 2010 - sep 2010</h4>
+                    <p>
+                        scandinavian design theory, history, and typology.
+                    </p>
+                    <h3>architectural internship @ court atkins architects</h3>
+                    <h4>sep 2008 - dec 2008</h4>
+                    <h4>mar 2009 - jun 2009</h4>
+                    <p>
+                        construction documents, client submittals, architectural review board renderings, and marketing materials.
+                    </p>
+                <!-- </div> -->
             </article>
         </section>
         <section>
@@ -325,23 +452,28 @@
                 <header>
                     <h2>kind words</h2>
                 </header>
-                <h3>alexis wogan, VP @ bump networks</h3>
-                <blockquote>
-                    Marion Huebner is a secret weapon. She is bright, logical, creative and nimble. The true source of her power is in her versatility. She applies her analytical mind when creating business proposals, engineering specifications, product prototypes, and business administration processes. And her creative side comes out when she designs websites, print pieces, and interior spaces. Regardless of the project type, you can count on Marion delivering solid professional results.
-                </blockquote>
-                <h3>ben jackson, CEO @ aplo</h3>
-                <blockquote>
-                    I met Marion Huebner in mid­ 2015 at a hiring event for a well­-reputed and extremely aggressive developer training program called General Assembly. Marion immediately stood out from the pack of dozens with her winning mix of passion, sociability, and raw talent. My partner and I hired her on the spot as a full­stack developer for our company, Aplo LLC. During her three­-month contract employment with Aplo she contributed significantly to the development of our innovative insurance CRM, quote engine, database, website, and enrollment technology. Marion is an excellent team­ player, a dilligent worker, an avid learner, and an overall excellent employee. I would highly recommend her for any junior­ level development positions your company has to offer. As a matter of fact, I would recommend her without hesitation for just about any position of any type ­- she is that good!
-                </blockquote>
+                <div class="block-container">
+                    <div class="block-3">
+                        <h3>alexis wogan, VP @ bump networks</h3>
+                        <blockquote>
+                            Marion Huebner is a secret weapon. She is bright, logical, creative and nimble. The true source of her power is in her versatility. She applies her analytical mind when creating business proposals, engineering specifications, product prototypes, and business administration processes. And her creative side comes out when she designs websites, print pieces, and interior spaces. Regardless of the project type, you can count on Marion delivering solid professional results.
+                        </blockquote>
+                    </div>
+                    <div class="block-3">
+                        <h3>ben jackson, CEO @ aplo</h3>
+                        <blockquote>
+                            I met Marion Huebner in mid­ 2015 at a hiring event for a well­-reputed and extremely aggressive developer training program called General Assembly. Marion immediately stood out from the pack of dozens with her winning mix of passion, sociability, and raw talent. My partner and I hired her on the spot as a full­stack developer for our company, Aplo LLC. During her three­-month contract employment with Aplo she contributed significantly to the development of our innovative insurance CRM, quote engine, database, website, and enrollment technology. Marion is an excellent team­ player, a dilligent worker, an avid learner, and an overall excellent employee. I would highly recommend her for any junior­ level development positions your company has to offer. As a matter of fact, I would recommend her without hesitation for just about any position of any type ­- she is that good!
+                        </blockquote>
+                    </div>
+                </div>
             </article>
         </section>
         <footer>
-            <div class="icons layout-flex-child-3col layout-flex-parent">
-                <a href="https://github.com/rionner" target="_blank"><i class="fa fa-github-alt fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/marionhuebner" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-                <a href="https://angel.co/marion-huebner" target="_blank"><i class="fa fa-angellist fa-2x"></i></a>
+            <div class="footer-icons">
+                <a href="https://github.com/rionner" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/marionhuebner" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                <a href="https://angel.co/marion-huebner" target="_blank"><i class="fab fa-angellist fa-lg"></i></a>
             </div>
-            <p class="layout-flex-child-3col">Available in Chicago, IL</br>and for remote work.</p>
             <h5 class="mahalo layout-flex-child-1col">mahalo</h5>
         </footer>
     </body>

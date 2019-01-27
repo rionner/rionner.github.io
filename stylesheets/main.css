@@ -1,0 +1,113 @@
+/* BASE */
+/* Default styles - exclusively elements, descendants, children, and pseudo classes. */
+
+/* BROSWER RESETS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+:focus {
+    outline: 0;
+}
+body {
+    background-color: #f9f7f7;
+    color: #000000;
+}
+ol, ul {
+    list-style: none;
+}
+li {
+    margin: 0;
+}
+article {
+    padding: 50px 25px 0;
+}
+a {
+    transition: color 200ms ease;
+    text-decoration: none;
+}
+img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+figure {
+    margin: 0;
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Hind', sans-serif;
+}
+p, li, a, blockquote {
+    font-family: 'Lato', sans-serif;
+}
+
+/* LAYOUT */
+.nav-header {
+    margin-bottom: 50px;
+}
+.nav {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+}
+.block-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    align-items: stretch;
+}
+.block-3 {
+    width: 100%;
+    padding: 10px 1%;
+}
+@media screen and (min-width: 500px) {
+    .block-3 {
+        width: 40%;
+    }
+}
+@media screen and (min-width: 900px) {
+    .block-3 {
+        width: 30%;
+    }
+}
+
+/* ELEMENTS */
+.nav-list, .footer-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.nav-list-item {
+    display: inline-block;
+    line-height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.advanced {
+    color: #06908f;
+}
+.intermediate {
+    color: #60b8b7;
+}
+.novice {
+    color: #bbe0e0;
+}
