@@ -2,19 +2,61 @@
 
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Marion Huebner</title>
+
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="./stylesheets/main.css" media="screen" charset="utf-8">
+
+        <!-- Libraries -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Meta Data -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="A Web Development portfolio including mixed technology projects and resume.">
+        <meta name="keywords" content="web development,freelance developer,remote developer,HTML,CSS,JavaScript,Ruby,Node,Express,MongoDB,SQL,PostgreSQL,Marion Huebner">
+        <meta name="author" content="Marion Huebner">
     </head>
     <body>
         <header>
             <nav>
                 <ul>
-                    <li></li>
+                    <li>
+                        <a href="#intro">intro</a>
+                    </li>
+                    <li>
+                        <a href="#about">about</a>
+                    </li>
+                    <li>
+                        <a href="#tech">tech</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#portfolio">portfolio</a>
+                    </li> -->
+                    <li>
+                        <a href="#work">work</a>
+                    </li>
+                    <li>
+                        <a href="#certs">certs</a>
+                    </li>
+                    <li>
+                        <a href="#education">education</a>
+                    </li>
+                    <li>
+                        <a href="#kind-words">kind words</a>
+                    </li>
                 </ul>
             </nav>
         </header>
         <section>
-            <article>
+            <article id="intro">
                 <header>
                     <h1>marion huebner</h1>
                 </header>
@@ -25,7 +67,7 @@
                     <a href="https://www.linkedin.com/in/marionhuebner" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
                 </p>
             </article>
-            <article>
+            <article id="about">
                 <header>
                     <h2>about</h2>
                 </header>
@@ -48,7 +90,7 @@
             </article>
         </section>
         <section>
-            <article>
+            <article id="tech">
                 <header>
                     <h2>tech</h2>
                 </header>
@@ -135,7 +177,38 @@
                     </li>
                 </ul>
             </article>
-            <article>
+            <!-- <article id="portfolio">
+                <header>
+                    <h2>portfolio</h2>
+                </header>
+                <a href="">
+                    <h4>style guide</h4>
+                    <p>Style components as building blocks.</p>
+                </a>
+                <a href="">
+                    <h4>aplo</h4>
+                    <p>Application Development for a new CRM for insurance agents.</p>
+                </a>
+                <a href="">
+                    <h4>original six</h4>
+                    <p>d3 renderings of data for the original six NHL teams.</p>
+                </a>
+                <a href="">
+                    <h4>marvel tap-it</h4>
+                    <p>An interactive, two player melee inspired by the Marvel API and character library.</p>
+                </a>
+                <a href="">
+                    <h4>murray inspo</h4>
+                    <p>“Nothing prepared me for being this awesome. It's kind of a shock. It's kind of a shock to wake up every morning and be bathed in this purple light.”</p>
+                </a>
+                <a href="">
+                    <h4>shake-it-speare</h4>
+                    <p>Consuming the shake-it-speare API which uses a Markov Model of Shakespeare's entire body of work.</p>
+                </a>
+            </article> -->
+        </section>
+        <section>
+            <article id="work">
                 <header>
                     <h2>work</h2>
                 </header>
@@ -194,7 +267,7 @@
                     <li>communicated available features and development timelines to prospective, new, and existing clients</li>
                     <li>managed website redesign and development</li>
                 </ul>
-                <h3>project manager | bump networks // code rebel</h3>
+                <h3>project manager | bump networks &amp; code rebel</h3>
                 <h4>sep 2013 - jan 2015</h4>
                 <p>
                     managed client projects with remote development teams with hybrid waterfall &amp; agile processes
@@ -207,7 +280,7 @@
                     <li>maintained promised project timelines and client expectations</li>
                 </ul>
             </article>
-            <article>
+            <article id="certs">
                 <header>
                     <h2>certs</h2>
                 </header>
@@ -215,7 +288,7 @@
                     in progress
                 </p>
             </article>
-            <article>
+            <article id="education">
                 <header>
                     <h2>education</h2>
                 </header>
@@ -246,7 +319,9 @@
                     construction documents, client submittals, architectural review board renderings, and marketing materials.
                 </p>
             </article>
-            <article>
+        </section>
+        <section>
+            <article id="kind-words">
                 <header>
                     <h2>kind words</h2>
                 </header>
@@ -261,7 +336,13 @@
             </article>
         </section>
         <footer>
-            <p></p>
+            <div class="icons layout-flex-child-3col layout-flex-parent">
+                <a href="https://github.com/rionner" target="_blank"><i class="fa fa-github-alt fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/marionhuebner" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+                <a href="https://angel.co/marion-huebner" target="_blank"><i class="fa fa-angellist fa-2x"></i></a>
+            </div>
+            <p class="layout-flex-child-3col">Available in Chicago, IL</br>and for remote work.</p>
+            <h5 class="mahalo layout-flex-child-1col">mahalo</h5>
         </footer>
     </body>
 </html>
