@@ -176,3 +176,8 @@ p, li, a, blockquote {
 .highlight {
     color: #ff3366;
 }
+.emph {
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-style: italic;
+}
