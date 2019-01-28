@@ -98,12 +98,12 @@ p, li, a, blockquote {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: stretch;
     align-items: stretch;
 }
 .block-3 {
     width: 100%;
     padding: 10px 1%;
+    border-bottom: 1px solid #000000;
 }
 @media screen and (min-width: 500px) {
     .block-3 {
@@ -118,6 +118,7 @@ p, li, a, blockquote {
 .block-2 {
     width: 100%;
     padding: 10px 2%;
+    border-bottom: 1px solid #000000;
 }
 @media screen and (min-width: 900px) {
     .block-2 {
@@ -136,6 +137,12 @@ p, li, a, blockquote {
 }
 .center {
     justify-content: center;
+}
+.start {
+    justify-content: flex-start;
+}
+.stretch {
+    justify-content: stretch;
 }
 .nav-list-item,
 .icon-link {
