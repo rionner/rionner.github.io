@@ -80,6 +80,7 @@ h6 {
 p, li, a, blockquote {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
+    line-height: 20px;
 }
 
 /* LAYOUT */
