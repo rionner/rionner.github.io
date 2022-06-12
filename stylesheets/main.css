@@ -2,14 +2,64 @@
 /* Default styles - exclusively elements, descendants, children, and pseudo classes. */
 
 /* BROSWER RESETS */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
   margin: 0;
   padding: 0;
   border: 0;
@@ -27,7 +77,8 @@ body {
   background-color: #f9f7f7;
   color: #000000;
 }
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 li {
@@ -54,33 +105,52 @@ figure {
 }
 
 /* TYPOGRAPHY */
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: 'Hind', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Hind", sans-serif;
 }
-h1, .h1 {
+h1,
+.h1 {
   margin-top: 12px;
   font-size: 38px;
 }
-h2, .h2 {
+h2,
+.h2 {
   margin-top: 8px;
   font-size: 32px;
-} 
-h3, .h3 {
+}
+h3,
+.h3 {
   margin-top: 5px;
   font-size: 24px;
 }
-h4, .h4 {
+h4,
+.h4 {
   margin-top: 2px;
-  font-size: 20px
-} 
+  font-size: 20px;
+}
 h5,
 h6,
 .h5,
 .h6 {
   font-size: 16px;
 }
-p, li, a, span, blockquote {
-  font-family: 'Lato', sans-serif;
+p,
+li,
+a,
+span,
+blockquote {
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -96,43 +166,49 @@ p, li, a, span, blockquote {
   width: 100%;
   background-color: #f9f7f7;
   border-top: 10px solid #ff3366;
-  box-shadow:  0px 3px 11px 0px #cccbcb;
+  box-shadow: 0px 3px 11px 0px #cccbcb;
+}
+.section {
+  padding: 0 20px 40px;
+  margin: 0 20px;
+  border-bottom: 1px solid #000;
 }
 .block-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: stretch;
+  /* align-items: stretch; */
 }
-.block-3 {
+.block {
   width: 100%;
-  padding: 10px 1%;
-  border-bottom: 1px solid #000000;
+  padding: 10px;
+  margin-top: 10px;
+}
+.-border-decor {
+  border-bottom: 1px solid #b9b9b9;
+  border-left: 1px solid #b9b9b9;
+  box-shadow: 5px 10px #d8d8d8;
+}
+@media screen and (min-width: 250px) {
+  .-four {
+    width: 48%;
+  }
 }
 @media screen and (min-width: 500px) {
-  .block-3 {
-    width: 40%;
+  .-four {
+    width: 23%;
+  }
+  .-three {
+    width: 48%;
   }
 }
 @media screen and (min-width: 900px) {
-  .block-3 {
-    width: 30%;
+  .-two {
+    width: 48%;
   }
-}
-.block-2 {
-  width: 100%;
-  padding: 10px 2%;
-  border-bottom: 1px solid #000000;
-}
-@media screen and (min-width: 900px) {
-  .block-2 {
-    width: 45%;
+  .-three {
+    width: 31%;
   }
-}
-.block-1 {
-  width: 100%;
-  padding: 10px 2%;
-  border-bottom: 1px solid #000000;
 }
 
 /* ELEMENTS */
@@ -163,7 +239,7 @@ p, li, a, span, blockquote {
   margin: 5px 5px 0 0;
   padding: 0 5px 1px;
   border-radius: 2px;
-  background-color: #FFEBF0;
+  background-color: #ffebf0;
 }
 .mahalo {
   text-align: center;
@@ -188,6 +264,9 @@ p, li, a, span, blockquote {
 }
 .start {
   justify-content: flex-start;
+}
+.between {
+  justify-content: space-between;
 }
 .stretch {
   justify-content: stretch;
