@@ -191,23 +191,23 @@ blockquote {
 }
 @media screen and (min-width: 250px) {
   .-four {
-    width: 48%;
+    width: 47%;
   }
 }
 @media screen and (min-width: 500px) {
   .-four {
-    width: 23%;
+    width: 22%;
   }
   .-three {
-    width: 48%;
+    width: 47%;
   }
 }
 @media screen and (min-width: 900px) {
   .-two {
-    width: 48%;
+    width: 47%;
   }
   .-three {
-    width: 31%;
+    width: 30%;
   }
 }
 
@@ -232,7 +232,11 @@ blockquote {
 .icon-link:hover {
   border-bottom: 2px solid #ff3366;
 }
+.responsibilities {
+  padding-left: 10px;
+}
 .tech-tags {
+  margin-top: 10px;
   padding: 5px;
 }
 .tech-tags span {
@@ -247,7 +251,8 @@ blockquote {
   background-color: #000000;
 }
 .emph {
-  margin-bottom: 2px;
+  margin-top: 5px;
+  margin-bottom: 10px;
   font-weight: bold;
   font-style: italic;
 }
